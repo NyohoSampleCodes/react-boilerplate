@@ -1,15 +1,15 @@
 #+TITLE: A test React project
 
-A React project using [[https://webpack.js.org/][webpack]] 4, babel 7 beta
-
-#+BEGIN_SRC sh
-npm start
-#+END_SRC
-
-or
+A [[https://reactjs.org/][React]] project using [[https://webpack.js.org/][Webpack]] 4, [[https://babeljs.io/][Babel]] 7 beta
 
 #+BEGIN_SRC sh
 npm run watch
 #+END_SRC
 
 Access http://localhost:8080/
+
+** Thanks
+https://github.com/mizchi/fe-base
+
+** License
+MIT
