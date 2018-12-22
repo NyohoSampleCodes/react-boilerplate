@@ -28,7 +28,7 @@
     "css-loader": "^0.28.11",
     "eslint": "^4.19.0",
     "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-prettier": "^2.7.0",
     "eslint-plugin-react": "^7.11.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "flow": "^0.2.3",
