@@ -1,18 +1,26 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Something from './components/something.js'
-import './main.scss'
-import './sub.sass'
+// @flow
 
-class Main extends React.Component {
+import React from "react";
+import ReactDOM from "react-dom";
+import Something from "./components/something.js";
+import "./main.scss";
+import "./sub.sass";
+
+type Props = {
+  name: string
+};
+
+class Main extends React.Component<Props> {
   render() {
+    this.props.doesNotExist;
+
     return (
       <div>
-        Hello, {name}!
+        Hello, {this.props.name}!
         <Something />
       </div>
-    )
+    );
   }
 }
 
-ReactDOM.render(<Main name="Thom" />, document.getElementById('root'))
+ReactDOM.render(<Main name="Thom" />, document.getElementById("root"));
