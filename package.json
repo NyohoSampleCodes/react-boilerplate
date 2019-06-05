@@ -30,7 +30,7 @@
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react": "^7.13.0",
     "flow": "^0.2.3",
     "flow-bin": "^0.98.0",
     "jest": "^24.7.1",
