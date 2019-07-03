@@ -6360,10 +6360,10 @@ react-dom@^16.8.6:
     prop-types "^15.6.2"
     scheduler "^0.13.6"
 
-react-hot-loader@^4.8.4:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.9.0.tgz#498e5f76aae28bfd420efdabddf5af156745b4dd"
-  integrity sha512-1N6MWV9++qYWrrs41MRhxATwyx743tr8RpeyL1VOZ54zsU8fOx4slYreHZ8v2BDGVfy+dJ0myJZrJA9/26RlCA==
+react-hot-loader@^4.12.1:
+  version "4.12.1"
+  resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.12.1.tgz#d9e9834fd7ba05424ebaa12bce4ad5082fee29eb"
+  integrity sha512-/DxbaR1/PYaCu8HHjD2U8Wxvy//MeHMppsa63UPFzkSoUSuDJ/SfZdff2IMz0JbIhkKFvalA98nPiBppNLIP8g==
   dependencies:
     fast-levenshtein "^2.0.6"
     global "^4.3.0"
