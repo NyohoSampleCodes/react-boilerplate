@@ -40,7 +40,7 @@
     "prettier-eslint-cli": "^5.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-hot-loader": "^4.12.6",
+    "react-hot-loader": "^4.12.11",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
