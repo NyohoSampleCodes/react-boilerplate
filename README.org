@@ -1,6 +1,6 @@
 #+TITLE: A test React project
 
-A [[https://reactjs.org/][React]] project using [[https://webpack.js.org/][webpack]] 4, [[https://babeljs.io/][Babel]] 7 beta
+A [[https://reactjs.org/][React]] project using [[https://webpack.js.org/][webpack]] 4, [[https://babeljs.io/][Babel]] 7
 
 #+BEGIN_SRC sh
 npm run watch
