@@ -4,6 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Something from './components/something.js'
 import Lorem from './components/lorem.js'
+import Ponpon from './components/ponpon.js'
 import './main.scss'
 import './sub.sass'
 
@@ -20,6 +21,7 @@ class Main extends React.Component<Props> {
         Hello, {this.props.name}!
         <Something />
         <Lorem />
+        <Ponpon />
       </div>
     )
   }
