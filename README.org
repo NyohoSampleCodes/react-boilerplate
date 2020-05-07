@@ -6,7 +6,7 @@ A [[https://reactjs.org/][React]] project using [[https://webpack.js.org/][webpa
 npm run watch
 #+END_SRC
 
-Access http://localhost:8080/
+Access http://localhost:9393/ or http://0.0.0.0:9393/
 
 ** Thanks
 https://github.com/mizchi/fe-base
