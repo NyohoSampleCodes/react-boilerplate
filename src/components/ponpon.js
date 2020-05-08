@@ -1,31 +1,33 @@
 import React from 'react'
 
-export default class Ponpon extends React.PureComponent {
-  static defaultProps = {
-    text: 'hoge',
-  };
-  
-  changeTextToRender = () => {
-    // const text = this.props.text.replace(/\n/g, '<br>');
+class Ponpon extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 'Please write an essay about your favorite 聖闘士.'
+    };
 
-    this.setState({ textToRender: text });
-    this.render();
-    const node  = ReactDOM.findDOMNode(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  componentWillUpdate = () => {
-  }
-  
-  componentDidUpdate = () => {
-    this.changeTextToRender();
+  handleChange(event) {
+    this.setState({value: event.target.value});
   }
   
   render() {
+    const { value } = this.props;
+
     return (
       <>
-        <textarea value={text}></textarea>
+        <textarea value={this.state.value} onChange={this.handleChange} />
+            <p>{this.state.value}</p>
       </>
     );
   }
 }
 
+Ponpon.defaultProps = {
+  value: 'default'
+};
+
+export default Ponpon;
