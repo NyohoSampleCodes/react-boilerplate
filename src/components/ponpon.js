@@ -40,21 +40,13 @@ class Buwabuwa extends React.Component {
 
   render() {
     const { value } = this.props;
+    const flag = value.match(/hoge/);
 
-    if (value.match(/hoge/)) {
-      return <Spring
-               config={{tension: 273, friction: 17, mass: 0.8 }}
-               from={{ opacity: 1, transformOrigin: 'center', transform: 'scale(0)' }}
-               to=  {{ opacity: 1, transformOrigin: 'center', transform: 'scale(1)' }}>
-               {props => <div style={props}>{value}</div>}
-             </Spring>
-    } else {
-      return <Spring
-               config={{tension: 273, friction: 17, mass: 0.8 }}
-               from={{ opacity: 1, transformOrigin: 'center', transform: 'scale(1)' }}
-               to=  {{ opacity: 0, transformOrigin: 'center', transform: 'scale(0)' }}>
-               {props => <div style={props}>{value}</div>}
-             </Spring>
-    }
+    return <Spring
+             config={{tension: 273, friction: 17, mass: 0.8 }}
+             from={{ opacity: flag ? 0 : 1, transform: flag ? 'scale(0)' : 'scale(1)' }}
+             to=  {{ opacity: flag ? 1 : 0, transform: flag ? 'scale(1)' : 'scale(0)' }}>
+             {props => <div style={props}>{value}</div>}
+           </Spring>
   }
 }
