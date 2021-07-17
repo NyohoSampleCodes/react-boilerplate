@@ -23,7 +23,7 @@ const presetsByEnv = {
       '@babel/preset-env',
       {
         modules: false,
-        browsers: ['last 2 versions', 'ie >= 11']
+        targets: "defaults"
       }
     ]
   ]
