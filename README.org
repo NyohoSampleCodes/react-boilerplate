@@ -11,8 +11,8 @@ Access http://localhost:9393/ or http://0.0.0.0:9393/
 
 Use Node.js v14 or v16
 
-** Thanks
-https://github.com/mizchi/fe-base
+** Reference
+- https://github.com/mizchi/fe-base
 
 ** License
 MIT
