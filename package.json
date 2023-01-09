@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "NODE_ENV=production webpack --mode production",
+    "start": "webpack-cli serve --mode development",
+    "build": "NODE_ENV=production webpack-cli serve --mode production",
     "watch": "webpack serve --hot --mode development",
     "build:dev": "webpack --mode development",
     "build:size": "NODE_ENV=production webpack --json | webpack-bundle-size-analyzer",
