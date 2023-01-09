@@ -3,9 +3,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpack = require('webpack')
 const pkg = require('./package')
 const DEV_PORT = process.env.PORT || 4444
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin")
+const isDevelopment = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-  mode: 'development',
+  mode: isDevelopment ? 'development' : 'production',
 
   entry: './src/index.js',
   output: {
@@ -16,7 +18,12 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: 'babel-loader',
+        use: {
+          loader: "babel-loader",
+          options: {
+            plugins: [isDevelopment && require.resolve("react-refresh/babel")].filter(Boolean),
+          },
+        },
         exclude: /node_modules/,
       },
       {
@@ -30,11 +37,15 @@ module.exports = {
     ],
   },
   devtool: 'source-map',
-  plugins: [new MiniCssExtractPlugin({ filename: 'style.css' })],
+  plugins: [
+    new ReactRefreshWebpackPlugin(),
+    new MiniCssExtractPlugin({ filename: 'style.css' })
+  ],
   resolve: {
     extensions: ['.js', '.jsx'],
   },
   devServer: {
+    hot: true,
     port: 9393
   },
 }
