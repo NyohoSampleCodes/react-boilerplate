@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import Something from './components/something.js'
 import Lorem from './components/lorem.js'
 import './main.scss'
@@ -25,4 +25,6 @@ class Main extends React.Component<Props> {
   }
 }
 
-ReactDOM.render(<Main name="Thom" />, document.getElementById('root'))
+const container = document.getElementById('root')
+const root = createRoot(container);
+root.render(<Main name="Thom" />)
